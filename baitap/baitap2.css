@@ -1,31 +1,29 @@
-.component {
-    width: 280px;
-    border: 1px solid #C1BCD1;
-    background-color: #FFFFFF;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 120vh;
+    height: 25vh;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
     text-align: center;
-    padding: 30px;
-    border-radius: 10px;
-    margin: 0;
 }
 
-body {
-    background-color: #F2F1F5;
-}
+.container .card {
+    background-color: #2ECC71;
+    width: 170px;
+    height: 50px;
+    padding: 10px;
 
-h1,
-b {
-    margin: 0;
-}
-
-h1 {
-    color: #BC2229;
-}
-
-b {
-    color: #231751;
-    font-size: 19px;
-}
-
-table {
-    border-spacing: 20px;
 }

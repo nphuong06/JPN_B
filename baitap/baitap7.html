@@ -10,38 +10,45 @@
 
 <body>
     <div class="container">
-        <div class="overlay"></div>
-        <form action="" class="form-group">
-            <div class="form-header">
-                <h3>New message</h3>
-                <ion-icon name="close-outline" class="exit"></ion-icon>
+        <header>
+            <div class="title">My Blog</div>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Posts</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <div class="post">
+                <h3 class="heading-3">Bài viết nổi bật</h3>
+                <p class="title">Tiêu đề chính bài viết</p>
+                <p class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut nulla eu lorem tincidunt
+                    tristique.
+                </p>
+                <a href="">Đọc thêm</a>
             </div>
-            <div class="line">
-                <hr>
+            <div class="post-other">
+                <h3 class="heading-3">Các bài viết khác</h3>
+                <p class="title">Bài viết 1</p>
+                <p class="content">Lorem ipsum dolor sit amet ...</p>
+                <p class="title">Bài viết 2</p>
+                <p class="content">Ut null eu lorem tincidunt...</p>
+                <p class="title">Bài viết 3</p>
+                <p class="content">Consectetur adipiscing elit..</p>
             </div>
-            <div class="form-body">
-                <label for="">Recipient:</label>
-                <br><input type="text" name="recipient" class="input1">
-                <br><label for="" class="message">Message:</label>
-                <br><textarea name="" class="input2"></textarea>
-            </div>
-            <div class="line">
-                <hr>
-            </div>
-            <div class="form-footer">
-                <div class="button-close">
-                    <p>Close</p>
-                </div>
-                &emsp;
-                <div class="button-send">
-                    <p>Send Message</p>
-                </div>
-            </div>
-        </form>
+        </main>
+        <footer>&copy; 2025 My Blog. All rights reserved</footer>
     </div>
-    </div>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
