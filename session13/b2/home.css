@@ -1,0 +1,274 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 100px;
+    width: 100vw;
+    padding: 30px 54px;
+}
+
+header .header-left .logo{
+    width: 185px;
+    height: 41px;
+}
+
+header .header-mid ul{
+    display: flex;
+    gap: 75px;
+}
+
+header .header-mid a{
+    color: #000000;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+header .header-right{
+    display: flex;
+    gap: 45px;
+}
+
+header .header-right a img{
+    width: 28px;
+    height: 28px;
+}
+
+
+.banner-layout{
+    background-image: url(./public/img/banner-main.png);
+    height: 500px;
+    background-position-y:-80px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.banner-layout .card{
+    display: flex;
+    flex-direction: column;
+    padding: 62px 43px 37px 39px;
+    width: 561px;
+    background-color: #FFF3E3;
+    border-radius: 10px;
+    transform: translate(700px, 35px);
+
+}
+
+.banner-layout .card .title{
+    line-height: 24px;
+    letter-spacing: 3px;
+    color: #333333;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.banner-layout .card .heading-1{
+    font-size: 52px;
+    color: #B88E2F;
+    line-height: 65px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+
+.banner-layout .card .paragraph{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 46px;
+}
+
+.banner-layout .card .button{
+    padding: 25px 72px;
+    width: 222px;
+    background-color: #B88E2F;
+    color: #FFF3E3;
+}
+
+.browse-range{
+    margin-top: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.browse-range .heading-1{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.browse-range .title{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.browse-range .card{
+    margin-top: 62px;
+    display: flex;
+    gap: 20px;
+}
+
+.browse-range .card .item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.browse-range .card .item p{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.browse-range .card .item img{
+    width: 381px;
+}
+
+.our-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 102px;
+}
+
+.our-product .heading-1{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #3a3a3a;
+    margin-bottom: 32px;
+    margin-top: 56px;
+}
+
+.our-product .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.our-product .card .item{
+    flex-basis: calc(100% / 4 - 32px);
+    flex-shrink: 1;
+    position: relative;
+}
+
+.our-product .item .card-hover{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.our-product .item:hover .card-hover{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.our-product .card-hover .button{
+    padding: 12px 52px;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    color: #B88E2F;
+}
+
+.our-product .card-hover .feature{
+    display: flex;
+    gap: 20px;
+}
+
+.our-product .feature .item{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.our-product .icon-feature{
+    width: 12px;
+    height: 12px;
+}
+
+.our-product .name-feature{
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.our-product .main-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.our-product .infor-product{
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F5F7;
+    padding: 16px 20px 30px 16px;
+    gap: 8px;
+}
+
+.our-product .infor-product .name-product{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #3a3a3a;
+}
+
+.our-product .infor-product .describe{
+    font-weight: 500;
+    color: #898989;
+    line-height: 24px;
+}
+
+.our-product .infor-product .price{
+    font-size:15px;
+    display: flex;
+    gap: 10px;
+}
+
+.our-product .infor-product .price .price-old{
+    text-decoration: line-through;
+    color: #B0B0B0;
+}
+
+.our-product .img-product{
+    width: 100%;
+}
