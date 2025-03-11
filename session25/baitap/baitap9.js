@@ -1,4 +1,4 @@
-let users = [`trang@gmail.com`];
+let users = [`phuong@gmail.com`];
 let email = prompt('Nhập email đăng kí');
 const checkEmail = (email) => {
     let found = false;
